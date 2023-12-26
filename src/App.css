@@ -1,0 +1,20 @@
+* {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+	/* Adjust styles for screens with a width of 600 pixels or less */
+	body {
+		font-size: 14px; /* Decrease font size for smaller screens */
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	/* Adjust styles for screens with a width of 400 pixels or less */
+	body {
+		font-size: 12px; /* Further decrease font size for very small screens */
+	}
+}

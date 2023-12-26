@@ -1,0 +1,74 @@
+/* Food.css */
+
+/* Common styles for all screen sizes */
+.centered-container1 {
+	margin: auto;
+	max-width: 300px; /* Adjust max-width for responsiveness */
+	text-align: center;
+}
+
+/* Add styles to the search input */
+input[type="search"] {
+	padding: 10px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+	outline: none;
+	width: 100%; /* Adjust width to fill the container */
+	transition: border-color 0.3s;
+}
+
+/* Add styles for when the input is focused */
+input[type="search"]:focus {
+	border-color: #8364eb; /* Change border color on focus */
+}
+
+/* Add styles for the placeholder text */
+input[type="search"]::placeholder {
+	color: #888;
+}
+
+/* Optional: Add styles for the container holding the search bar */
+/* You can customize the styles based on your layout */
+.search-container {
+	margin: 20px auto; /* Adjust margin for responsiveness */
+}
+
+.card-container {
+	max-width: 80%; /* Adjust max-width for responsiveness */
+	text-align: center;
+	background-color: #ffffff; /* Set background color */
+	border: 1px solid #e1e1e1; /* Set border color */
+	border-radius: 8px; /* Set border radius for rounded corners */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+	padding: 20px; /* Add padding for content inside the card */
+	margin: 20px auto; /* Adjust margin for responsiveness */
+	overflow-y: auto;
+}
+
+/* Media Queries for different screen sizes */
+@media only screen and (max-width: 768px) {
+	/* Adjust styles for screens with a width of 768 pixels or less */
+	.centered-container1,
+	.search-container,
+	.card-container {
+		max-width: 90%;
+	}
+
+	input[type="search"] {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	/* Adjust styles for screens with a width of 600 pixels or less */
+	.centered-container1,
+	.search-container,
+	.card-container {
+		max-width: 95%;
+	}
+
+	input[type="search"] {
+		width: 100%;
+	}
+}
